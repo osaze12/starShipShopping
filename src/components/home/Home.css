@@ -1,0 +1,113 @@
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  padding: 10px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  padding-top: 130px;
+}
+
+.home__inner {
+  max-width: 550px;
+  padding-left: 50px;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home__inner_top {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.home__inner_top h1 {
+  font-size: 1.6em;
+  line-height: 1.7;
+}
+
+.home__inner_top button {
+  border: none;
+  padding: 10px 35px;
+  font-weight: bold;
+  margin-top: 15px;
+  outline: none;
+  background: #ca983d;
+  color: #fff;
+  letter-spacing: .4em;
+}
+
+.home__inner_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 200px;
+}
+
+.home__inner_bottom a {
+  color: #fff;
+}
+
+.home__inner_bottom .fb, .tw, .amz {
+  margin-right: 55px;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 414px) {
+  .home__inner_top h1 {
+    font-size: 1em;
+    margin-top: 50px;
+    letter-spacing: .1em;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

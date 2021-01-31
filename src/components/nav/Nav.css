@@ -1,0 +1,55 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #283848;
+  padding: 10px 0;
+  margin-bottom: 90px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.nav .nav__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav__inner .cart_icon {
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart_icon span {
+  background: #ca983d;
+  border-radius: 50%;
+  padding: 4px 6px;
+  font-size: .6em;
+  border-radius: 50%;
+  margin-left: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nav .nav__inner p {
+  font-size: 0.9em;
+  margin: 0 40px;
+  color: #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Nav.css.map */

@@ -1,0 +1,9 @@
+
+ @font-face {
+    font-family: 'insomniax';
+    src: url(../src/components/assets/RobotGo-x3xx0.ttf);
+  }
+
+  *{
+      font-family: 'insomniax';
+  }

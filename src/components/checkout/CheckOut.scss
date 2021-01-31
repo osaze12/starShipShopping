@@ -1,0 +1,113 @@
+.check-out{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: fade-check-out;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-check-out{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.cancel_modal{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    opacity: .7;
+}
+.check-out__inner{
+    display: flex;
+    align-items: center;
+}
+.check-out_img{
+    width: 350px;
+    height: 350px;
+}
+
+.check-out_button{
+    margin-top: 15px;
+    position: relative;
+    background: black;
+    width: 90px;
+    height: 30px;
+}
+.check-out_button button{
+    border: none;
+    color: #fff;
+    padding: 7px 30px;
+    background: #16a916;
+    position: absolute;
+    top: -4px;
+    cursor: pointer;
+    letter-spacing: .1em;
+    outline: none;
+}
+.clear-cart{
+    margin-top: 15px;
+    position: relative;
+    background: black;
+    width: 135px;
+    height: 30px;
+}
+.clear-cart button{
+    border: none;
+    color: rgb(63, 61, 61);
+    padding: 7px 20px;
+    background: #f0f0f0;
+    position: absolute;
+    top: -4px;
+    cursor: pointer;
+    letter-spacing: .1em;
+    outline: none;
+}
+.container-model{
+    background: #272727;
+    width: 380px;
+    height: 215px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 10px;
+    box-shadow: 2px 2px 9px #e2e2e2;
+    color: #fff;
+}
+.Modal{
+    position: absolute;
+    background: #824d22;
+    padding: 10px;
+    color: #fff;
+    left: 0;
+    top: 0;
+}
+.modal_inner p{
+    line-height: 1.9;
+    width: 300px;
+    padding: 39px 30px;
+}
+
+@media screen and (max-width: 500px){
+    .check-out__inner{
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .check-out_img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .check-out_info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .check-out_info .cost{
+        text-align: center;
+    }
+}
